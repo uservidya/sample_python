@@ -22,12 +22,5 @@ script:
   - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
-  - echo $secret >> README.md
+  #- echo $secret >> README.md
   - cat ~/.gitconfig
-before_archive:
-  - mv README.md shippable/
-after_archive:
-  - echo $SHIPPABLE_ARTIFACTS_URL
-notifications:
-  email:
-   - exampleone@org.com
