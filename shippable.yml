@@ -4,12 +4,12 @@ python:
   #- 2.6
   #- 2.7
   - 3.2
-  - 3.3
+ # - 3.3
   #- 3.4
   #- pypy
 install:
   - pip install -r requirements.txt
-
+archive: true
 # Make folders for the reports
 before_script:
   - mkdir -p shippable/testresults
