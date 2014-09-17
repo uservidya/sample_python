@@ -24,5 +24,9 @@ script:
   - echo $var2
 notifications:
     email:
+      recipients:
         - vidya_test1@yahoo.in
         - vidya@shippable.com
+      on_success: always
+      on_failure: always
+    
