@@ -7,12 +7,6 @@ python:
   - 3.3
   #- 3.4
   #- pypy
-env:
- global:
-  - secure: Gp49603sNyNK3DFQiU7Y/8Cp4bJ5Gf7uxh13nCXflAxwUtimHmhlYNpMY0MJ9sKpvd1V5ubz7A7C+GQuXMJaUffjdnr9JSZkOsssz1QY1mi18/hJ9Rl8wnDDhfDfHeCpUOrAYb17nmtaTqiyGypjpxQLKXnpjzreuCftWpikmKAKjgi2l5s+JbLoYAN/gZTV90GWEHoCCjyHN6HZzCjmzIMgLdZO+/s1SVgRk6qZD/0gWCWrdXnlDI4X37T5QVoGHw77e0ykAoRuFv+1L5JI6nXqD3MO8sI9bfhG9qpoHarDA1TB4EMMDSxAYbdJNKdVV0BkcAXF8WaCdgcugL8Bfg==
-  #- secure: delZzsoRnqIRZ8OjM1mDc0Zl+IowUTGFX5kXRmnXcdtxmIgiOGg8GF0LfZHuhDnnoSA7ggOOQAmobOfrUJtFNKgxeM4J+HhPYKovOP8UdCuJgyEE1ygnW55fihgJAXbnNJ0uIAS61y9tREBR/owUQa1Q7Qu48PUeJSoIO+ngIaKb64SGwhPSVbmXp5SE+sm1MmadWt+agMOX1UTium0lnJ2SV+TZWXQ07mhaFX+9eNWnstZYeUOh94dybHFAX6zjnnJYyD419iyx6oLyyYf5E/bHGuix5XNoJgFKU1jA5FUK5tIUY9S1Q7l0IaGtU53nK8nYfd03l8AO1qGfNk2jEQ==
- matrix:
-  - secure: XtCQEAk3+AmDXVM62cJOPr3hwHuEASUOepI1S0OJS2b9n/r9k+Wo/W5nU9/2w07EZfqAY8g9zIA47Ay4LRwNYhANFbKCQKJevYSC0MrazivQbcJaZLDp8kIFbsL5hGCN4lEYJFdwuHq75K+GmzRR/cai+2TJMEXRGOhFx+U2wMKejHsvNhtM5mkmh7WUiIQKDGtR8fb0ytlcXmuvaRfyRO8YiNq8mgEPmJDToL/Zk6V+tIAWD1+GB4N093n+9Wg/eoYYKCh1sXVotjyoKbIW8sZjFjQPvCOz5L9K6vxV7o1ppYMuFc36kPjflzsJFUafDfiMwMOL+WPcXorXkMhHow==
 install:
   - pip install -r requirements.txt
 
@@ -28,3 +22,7 @@ script:
   #- echo $secret >> README.md
   - cat ~/.gitconfig
   - echo $var2
+notifications:
+    email:
+        - vidya_test1@yahoo.in
+        - vidya@shippable.com
